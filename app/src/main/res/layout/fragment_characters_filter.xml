@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1919"
+    android:orientation="vertical"
+    tools:context=".presentation.ui.fragments.character.CharactersFilterFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/status"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/btm_rd_alive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alive"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/btm_rd_dead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dead"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/btm_rd_unknown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unknown"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/species"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_species"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/btm_rd_human"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/human"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/btm_rd_humanoid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/humanoid"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/btm_rd_alien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alien"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/gender"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/btm_rd_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/btm_rd_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/btm_rd_genderLess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/genderless"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/btm_gender_unknown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unknown"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:backgroundTint="#000000"
+            android:text="@string/reset"
+            android:textColor="#B30000" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:backgroundTint="#000000"
+            android:text="@string/apply"
+            android:textColor="#05B622" />
+    </LinearLayout>
+</LinearLayout>

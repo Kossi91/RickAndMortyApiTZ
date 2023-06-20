@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">RickAndMortyApiTZ</string>
+    <string name="the_name">The name</string>
+    <string name="the_status">The status</string>
+    <string name="the_gender">The gender</string>
+    <string name="the_species">The species</string>
+    <string name="created">Created:</string>
+    <string name="name">Name:</string>
+    <string name="air_date">Air Date:</string>
+    <string name="episode">Episode:</string>
+    <string name="type">Type:</string>
+    <string name="dimension">Dimension:</string>
+    <string name="retry">retry</string>
+    <string name="alive">Alive</string>
+    <string name="dead">Dead</string>
+    <string name="unknown">Unknown</string>
+    <string name="species">Species</string>
+    <string name="human">Human</string>
+    <string name="humanoid">Humanoid</string>
+    <string name="alien">Alien</string>
+    <string name="gender">Gender</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="genderless">Genderless</string>
+    <string name="reset">Reset</string>
+    <string name="apply">Apply</string>
+    <string name="status">Status</string>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.rickandmortyapitz.presentation.ui.fragments.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <dialog
+        android:id="@+id/charactersFilterFragment"
+        android:name="com.example.rickandmortyapitz.presentation.ui.fragments.character.CharactersFilterFragment"
+        android:label="fragment_characters_filter"
+        tools:layout="@layout/fragment_characters_filter">
+
+        <action
+            android:id="@+id/action_charactersFilterFragment_to_characterFragment"
+            app:destination="@id/characterFragment" />
+
+    </dialog>
+
+    <fragment
+        android:id="@+id/characterFragment"
+        android:name="com.example.rickandmortyapitz.presentation.ui.fragments.character.CharacterFragment"
+        android:label="fragment_character"
+        tools:layout="@layout/fragment_character">
+        <action
+            android:id="@+id/action_characterFragment_to_charactersFilterFragment"
+            app:destination="@id/charactersFilterFragment" />
+
+        <argument
+            android:name="status"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="gender"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="species"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/episodeFragment"
+        android:name="com.example.rickandmortyapitz.presentation.ui.fragments.episode.EpisodeFragment"
+        android:label="fragment_episode"
+        tools:layout="@layout/fragment_episode" />
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.example.rickandmortyapitz.presentation.ui.fragments.location.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" />
+</navigation>
