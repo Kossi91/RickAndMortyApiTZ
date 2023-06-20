@@ -9,8 +9,7 @@ plugins {
     id("dagger.hilt.android.plugin")
     //kapt
     id("kotlin-kapt")
-//     easylauncher
-//    id("com.starter.easylauncher") version "5.0.0"
+    id("com.starter.easylauncher") version "5.0.0"
 }
 
 android {
@@ -116,11 +115,3 @@ dependencies {
     implementation("de.hdodenhof:circleimageview:3.1.0")
 
 }
-
-//easylauncher {
-//    buildTypes {
-//        create("debug") {
-//            filters(customRibbon(ribbonColor = "#FF6200EE", textSizeRatio = 0.150F))
-//        }
-//    }
-//}
